@@ -1,0 +1,18 @@
+@import url("https://use.typekit.net/drc7rwa.css");
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css");
+
+@font-face {
+    font-family: 'gt_america_black';
+    src: url('../fonts/GT-America-Expanded-Black.woff2') format('woff2'),
+    url('../fonts/GT-America-Expanded-Black.woff') format('woff');
+    font-weight: normal;
+    font-display: swap;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+  
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+/* FONTS : VORTICE CONCEPT, BOOSTRAP ICONS, GT AMERICA BLACK, POPPINS, OPEN SANS */

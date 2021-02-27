@@ -1,0 +1,138 @@
+/* PAGE */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: var(--color-white);
+    background: var(--color-grey-5);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+}
+
+body::-webkit-scrollbar {
+    width: 0.7em;
+}
+   
+body::-webkit-scrollbar-thumb {
+    background-color: var(--color-grey-1);
+    border-radius: 10px;
+}
+
+div#top {
+    position: absolute;
+    top: 0;
+}
+
+img {
+    user-select: none;
+}
+
+::selection {
+    background: var(--color-white);
+    color: var(--color-black);
+}
+/* PAGE */
+
+/* NAVIGATION */
+div.left {
+    left: 0;
+}
+
+div.right {
+    right: 0;
+}
+
+div.right a, div.left a {
+    color: var(--color-white);
+    text-decoration: none;
+    border-bottom: solid 2px var(--color-white);
+}
+
+div.right a:hover, div.left a:hover {
+    border-bottom: solid 2px var(--color-grey-1);
+    transition: 400ms;
+}
+
+div.navigation {
+    margin: 60px 100px;
+    position: fixed;
+    top: 0;
+    font-size: 25px;
+    font-style: normal;
+    z-index: 1000;
+}
+/* NAVIGATION */
+
+/* PRESENTATION */
+div.presentation {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 350px;
+    color: var(--color-grey-7);
+}
+
+.slide-right {
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    display: flex;
+}
+
+.slide-right span {
+    display: inline-block;
+    animation: marquee 15s linear infinite;
+    padding-right: 60px;
+    word-spacing: 30px;
+}
+
+/* Make it move */
+@keyframes marquee {
+    0%   { transform: translate(0, 0); }
+    100% { transform: translate(-100%, 0); }
+}
+
+/* PRESENTATION */
+
+/* FOOTER */
+div.share {
+    margin: 40px;
+    font-size: 22px;
+}
+
+a.link {
+    color: white;
+    text-decoration: none;
+    border-bottom: solid 2px var(--color-grey-1);
+}
+
+a.link:hover {
+    border-bottom: solid 2px var(--color-white);
+    transition: 400ms;
+}
+
+i.icon {
+    margin: 0 17px;
+    font-size: 26px;
+}
+/* FOOTER */
+
+/* CURSOR */
+div.cursor, canvas.cursor {
+    position: fixed;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    z-index: 1002;
+    mix-blend-mode: difference;
+}
+
+canvas.cursor--canvas {
+    width: 100vw;
+    height: 100vh;
+    z-index: 12000;
+}
+/* CURSOR */
